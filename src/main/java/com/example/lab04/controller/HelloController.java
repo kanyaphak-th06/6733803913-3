@@ -28,9 +28,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     // ── ข้อมูลนักศึกษา ── แก้ไขตรงนี้ ──────────────────────────────────────
-    private static final String NAME    = "Your Name Here";     // TODO: ใส่ชื่อจริง
-    private static final String ID      = "xxxx";               // TODO: ใส่รหัสนักศึกษา
-    private static final String SECTION = "x";                  // TODO: ใส่เลข Section
+    private static final String NAME    = "กัญญาภัค ทองวิเศษ";     // TODO: ใส่ชื่อจริง
+    private static final String ID      = "673380391-3";               // TODO: ใส่รหัสนักศึกษา
+    private static final String SECTION = "3";                  // TODO: ใส่เลข Section
     // ─────────────────────────────────────────────────────────────────────────
 
     /**
@@ -59,7 +59,7 @@ public class HelloController {
     @GetMapping("/info")
     public String info() {
         return String.format(
-            "Project: Lab03 Spring Boot | Name: %s | ID: %s | Section: %s",
+            "Project: Lab04 Spring Boot | Name: %s | ID: %s | Section: %s",
             NAME, ID, SECTION
         );
     }
